@@ -144,7 +144,7 @@ public class PieChartView extends View {
         //关闭硬件加速
         setLayerType(LAYER_TYPE_SOFTWARE, null);
 
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, getResource());
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PieChartView);
         title = typedArray.getString(R.styleable.PieChartView_title);
         info = typedArray.getString(R.styleable.PieChartView_subTitle);
         titleSizeDp = (int) typedArray.getDimension(R.styleable.PieChartView_titleSize, 28);
